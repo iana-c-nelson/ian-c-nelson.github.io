@@ -1,0 +1,60 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Merienda:700');
+
+/* base styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+ body {
+    background: #ffffff;
+    color: #777777;
+    background-color: #e2e6ff;
+}
+
+h1, h2, h3, .navbar-brand {
+    font: bold 26px 'Merienda', cursive;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.col h1,
+.col h2,
+.col h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.content {
+    margin-bottom: 50px;
+    padding: 50px 0;
+    font: bold 16px 'Crimson Text', serif;
+}
+
+/* portfolio page */
+.portfolio-item-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;    
+    z-index: 2;
+}
+
+.portfolio-item-name a,
+portfolio-item-name a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
