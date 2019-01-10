@@ -41,20 +41,38 @@ h3 {
 }
 
 /* portfolio page */
-.portfolio-item-name {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 10px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #ffffff;    
-    z-index: 2;
+.portfolio-item {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 5px;
 }
 
-.portfolio-item-name a,
-portfolio-item-name a:visited {
-    text-decoration: none;
-    color: #ffffff;
+.portfolio-item-info {
+    text-align: center;
+    padding: 5px; 
 }
+
+.portfolio-item-info h5 {
+    font: bold 14px 'Merienda', cursive;
+    /* margin: 5px; */
+    padding: 0;
+}
+
+.portfolio-item-info p {
+    /* margin: 5px; */
+    padding: 0;
+}
+
+.portfolio-item a,
+.portfolio-item a:visited {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.portfolio-item a:hover {
+    color: lightslategrey;
+}
+
