@@ -41,17 +41,28 @@ h3 {
 }
 
 /* portfolio page */
+.card.projects {
+    margin-bottom: 10px;
+}
+
 .portfolio-item {
     color: #ffffff;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     padding: 5px;
+
 }
 
 .portfolio-item-info {
     text-align: center;
     padding: 5px; 
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+
+.portfolio-item-info .icon-wrapper{
+    font-size: 10em;
 }
 
 .portfolio-item-info h5 {
@@ -61,8 +72,8 @@ h3 {
 }
 
 .portfolio-item-info p {
-    /* margin: 5px; */
     padding: 0;
+    margin-bottom: 8px;
 }
 
 .portfolio-item a,
@@ -71,6 +82,11 @@ h3 {
     text-decoration: underline;
     margin: 5px;
 }
+
+.portfolio-item a:first-of-type {
+    text-decoration: none;
+}
+
 
 .portfolio-item a:hover {
     color: lightslategrey;
