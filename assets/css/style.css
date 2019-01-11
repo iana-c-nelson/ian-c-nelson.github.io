@@ -1,6 +1,11 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Merienda:700');
 
+@font-face {
+    font-family: odachi;
+    src: url(../fonts/Odachi.woff);
+}
+
 /* base styles */
 * {
     box-sizing: border-box;
@@ -15,6 +20,7 @@
 
 h1, h2, h3, .navbar-brand {
     font: bold 26px 'Merienda', cursive;
+    /* font: bold 26px 'odachi', cursive; */
 }
 
 h2 {
