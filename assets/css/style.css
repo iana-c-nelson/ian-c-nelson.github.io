@@ -1,5 +1,5 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Merienda:700');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Titillium+Web:400,700');
 
 @font-face {
     font-family: odachi;
@@ -7,48 +7,112 @@
 }
 
 /* base styles */
-* {
-    box-sizing: border-box;
-  }
-  
+*, *:after, *:before {
+	box-sizing: border-box;
+}  
   
  body {
     background: #ffffff;
     color: #777777;
     background-color: #000000;
+    overflow: hidden;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, .navbar-brand {
-    font: bold 26px 'Merienda', cursive;
-    /* font: bold 26px 'odachi', cursive; */
-}
-
-h2 {
-    font-size: 22px;
-}
-
-h3 {
-    font-size: 18px;
-}
-
-.col h1,
-.col h2,
-.col h3 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
 }
 
 .content {
-    margin-bottom: 50px;
-    padding: 50px 0;
-    font: bold 16px 'Crimson Text', serif;
+    padding: 15px 5px;
+    margin: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4rem;
+    bottom: 3rem;
+    overflow: auto;
 }
 
-/* portfolio page */
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 3rem;
+}
+
+.navbar-brand,
+h1, h2, h3 {
+    font: bold 36px 'Odachi', sans-serif;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4, h5 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+.text-neon-blue {
+    color: #D0F8FF;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+}
+
+.text-neon-pink {
+    color: #ecccf8;
+    text-shadow: 0 0 5px #e2b6f3, 0 0 10px #e2b6f3,
+             0 0 20px #e2b6f3, 0 0 30px #e2b6f3,
+             0 0 40px #e2b6f3;
+}
+
+hr.divider-neon-pink {
+    background-color: #ecccf8;
+    box-shadow: 0 0 10px 1px  #e2b6f3;
+}
+
+.border-gray {
+    border-color:#777788;
+}
+
+#storm-bg {
+    position: fixed;
+    top: 0;
+    left: -20px;
+    touch-action: none;
+}
+
+.content > article {
+    margin-bottom: 15px;
+}
+
+/* about section */
+.img-paragraph {
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+
+/* portfolio section */
 .card.projects {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .portfolio-item {
@@ -57,10 +121,10 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     padding: 5px;
-
 }
 
 .portfolio-item-info {
+    height: 100%;
     text-align: center;
     padding: 5px; 
     padding-bottom: 10px;
@@ -68,13 +132,7 @@ h3 {
 }
 
 .portfolio-item-info .icon-wrapper{
-    font-size: 10em;
-}
-
-.portfolio-item-info h5 {
-    font: bold 14px 'Merienda', cursive;
-    /* margin: 5px; */
-    padding: 0;
+    font-size: 5em;
 }
 
 .portfolio-item-info p {
@@ -94,7 +152,16 @@ h3 {
 }
 
 
-.portfolio-item a:hover {
-    color: lightslategrey;
+.portfolio-item:hover  {
+    color: #d579f8;
+    text-shadow: 0 0 5px #e2b6f3, 0 0 10px #e2b6f3,
+             0 0 20px #e2b6f3, 0 0 30px #e2b6f3,
+             0 0 40px #e2b6f3;
 }
 
+.portfolio-item a:last-of-type:hover  {
+    color: #e63776;
+    text-shadow: 0 0 5px #ee95b5, 0 0 10px #ee95b5,
+             0 0 20px #ee95b5, 0 0 30px #ee95b5,
+             0 0 40px #ee95b5;
+}

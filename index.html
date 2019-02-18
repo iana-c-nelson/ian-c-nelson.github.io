@@ -11,6 +11,12 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
 
@@ -32,9 +38,9 @@
     ></script>
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-neon-blue">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Ian Nelson</a>
+          <a class="navbar-brand" href="#about">Ian Nelson</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -48,94 +54,673 @@
           </button>
           <div class="collapse navbar-collapse" id="profile-navbar">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
-              <!-- <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Portfolio
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-neon-blue" href="#projects-group"
+                    >Group Projects</a
+                  >
+                  <a class="dropdown-item text-neon-blue" href="#projects-fun"
+                    >The Fun Stuff</a
+                  >
+                  <a class="dropdown-item text-neon-blue" href="#projects-utility"
+                    >The Utilitarian Stuff</a
+                  >
+                  <a class="dropdown-item text-neon-blue" href="#projects-other"
+                    >The Other Stuff</a
+                  >
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="content about">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-4">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="assets/images/head-shot-3.jpg"
-                alt="Ian"
-              />
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-header"><h3>About Me</h3></div>
-              <div class="card-body">
-                <p class="card-text">
-                  <span>M</span>y name is Ian Nelson and I am a non-binary trans
-                  web developer! I have been programming since got my first
-                  computer, a Commodore 64. For the last 15 years I have been
-                  working in the .Net Framework environment primarily building
-                  Web Applications with C# on the back end and jQuery &
-                  jQuery-UI on the front end. Our data storage was done through
-                  both Microsoft SQL Server and Oracle RDBMS. We also used Web
-                  Api 2.0 and MVC 4.0.
-                </p>
-                <p class="card-text">
-                  <span>R</span>ecently, I began attending University of Arizona
-                  Coding Bootcamp so that I could expand my skillset to include
-                  the MERN stack (MongoDB, Express, React, and Node.js). I
-                  really enjoy learning new (to me) Technologies, and I felt
-                  that it would also make me a more rounded and desirable web
-                  developer. I am looking forward to all of the new things I
-                  will be able to do at the end of the course!
-                </p>
-                <p class="card-text">
-                  <span>A</span>s a non-binary trans-person, I don't really fit
-                  on either end of the gender spectrum. I have struggled with my
-                  gender all of my life. As a Gen-X kid in a small town, there
-                  was little understanding or acceptance of people who were
-                  different. The world has change a lot and I have finally
-                  started to find peace with who I am. I think this is important
-                  because it gives me another perspective on the world from
-                  cis-gendered people. I feel like it allows me to be more
-                  accepting of other people's differences and the perspectives
-                  that gives them. Whether it is informed by ethnicity, culture,
-                  gender, or sexual orientation. The world is a big beautiful
-                  place full of vibrant and unique people, and together we are
-                  greater than the sum of our parts.
-                </p>
-                <hr />
-                <blockquote class="blockquote mb-0">
-                  <p>
-                    All those moments will be lost in time, like tears in
-                    rain...
+
+    <div class="content">
+      <div id="storm-bg" touch-action="none"></div>
+
+      <article id="about" class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card text-white bg-dark border-gray">
+                <div class="card-header border-gray text-neon-pink"><h3>About Me</h3></div>
+                <div class="card-body">
+                  <img
+                    class="img-paragraph"
+                    src="assets/images/head-shot-3.jpg"
+                    alt="Ian"
+                    ALIGN="left"
+                    height="250px"
+                    width="188px"
+                  />
+                  <p class="card-text">
+                    <span>M</span>y name is Ian Nelson and I am a non-binary
+                    trans web developer! I have been programming since got my
+                    first computer, a Commodore 64. For the last 15 years I have
+                    been working in the .Net Framework environment primarily
+                    building Web Applications with C# on the back end and jQuery
+                    & jQuery-UI on the front end. Our data storage was done
+                    through both Microsoft SQL Server and Oracle RDBMS. We also
+                    used Web Api 2.0 and MVC 4.0.
                   </p>
-                  <footer class="blockquote-footer">
-                    Roy Batty <cite title="Blade Runner">Blade Runner</cite>
-                  </footer>
-                </blockquote>
+                  <p class="card-text">
+                    <span>R</span>ecently, I began attending University of
+                    Arizona Coding Bootcamp so that I could expand my skillset
+                    to include the MERN stack (MongoDB, Express, React, and
+                    Node.js). I really enjoy learning new (to me) Technologies,
+                    and I felt that it would also make me a more rounded and
+                    desirable web developer. I am looking forward to all of the
+                    new things I will be able to do at the end of the course!
+                  </p>
+                  <p class="card-text">
+                    <span>A</span>s a non-binary trans-person, I don't really
+                    fit on either end of the gender spectrum. I have struggled
+                    with my gender all of my life. As a Gen-X kid in a small
+                    town, there was little understanding or acceptance of people
+                    who were different. The world has change a lot and I have
+                    finally started to find peace with who I am. I think this is
+                    important because it gives me another perspective on the
+                    world from cis-gendered people. I feel like it allows me to
+                    be more accepting of other people's differences and the
+                    perspectives that gives them. Whether it is informed by
+                    ethnicity, culture, gender, or sexual orientation. The world
+                    is a big beautiful place full of vibrant and unique people,
+                    and together we are greater than the sum of our parts.
+                  </p>
+                  <hr class="divider-neon-pink">
+                  <blockquote class="blockquote mb-0">
+                    <p>
+                      All those moments will be lost in time, like tears in
+                      rain...
+                    </p>
+                    <p class="blockquote-footer">
+                      Roy Batty <cite title="Blade Runner">Blade Runner</cite>
+                    </p>
+                  </blockquote>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </article>
+
+      <article id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div id="projects-group" class="card text-white bg-dark border-gray projects group">
+                <div class="card-header border-gray text-neon-pink"><h3>Group Projects</h3></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://ian-c-nelson.github.io/u-of-a-project-1-morbidity/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <h5>Morbidity Heat Map</h5>
+                            <p>
+                              A site using WHO data to map disease morbidity via
+                              Google Maps.
+                            </p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/u-of-a-project-1-morbidity"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://enigmatic-castle-34881.herokuapp.com/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fas fa-leaf"></i>
+                            </div>
+                            <h5>Branches</h5>
+                            <p>A clone of Twitter as a challenge. WIP.</p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/u-of-a-project-2-branches"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://limitless-ocean-11574.herokuapp.com/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fas fa-car-mechanic"></i>
+                            </div>
+                            <h5>MO - Maintenance Organized</h5>
+                            <p>A vehicular maintenance tracking app. WIP.</p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/u-of-a-project-3-mo"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="projects-fun" class="card text-white bg-dark border-gray projects fun">
+                <div class="card-header border-gray text-neon-pink"><h3>The Fun Stuff</h3></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://ian-c-nelson.github.io/cosmic-horror-word-guess-game/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fab fa-centos"></i>
+                            </div>
+                            <h5>Cosmic Horror Hangman</h5>
+                            <p>A Lovecraftian Mythos based hangman game.</p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/cosmic-horror-word-guess-game"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://ian-c-nelson.github.io/trivial-sci-fi-trivia-game/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-rocket"></i>
+                            </div>
+                            <h5>Trivial Sci-Fi Trivia Game</h5>
+                            <p>A little sci-fi trivia game.</p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/trivial-sci-fi-trivia-game"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://ian-c-nelson.github.io/kaiju-rps-multiplayer/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fas fa-paw-claws"></i>
+                            </div>
+                            <h5>Kaiju Battle</h5>
+                            <p>A kaiju themed multiplayer Rochambeaux game.</p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/kaiju-rps-multiplayer"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://ian-c-nelson.github.io/star-wars-gauntlet/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fab fa-galactic-republic"></i>
+                            </div>
+                            <h5>Star Wars Gauntlet</h5>
+                            <p>A simple Star Wars fight simulator.</p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/star-wars-gauntlet"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://enigmatic-sands-18235.herokuapp.com/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-dragon"></i>
+                            </div>
+                            <h5>Dungeon Friend Finder</h5>
+                            <p>
+                              A mock friend finder that creates random D&D NPCs
+                              and matches their profile answers to yours.
+                            </p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/dungeon-friend-finder"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://scratch.mit.edu/projects/239062430/fullscreen/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-cat"></i>
+                            </div>
+                            <h5>Cat & Mouse</h5>
+                            <p>
+                              A kitty themed catch game created using Scratch
+                              from MIT.
+                            </p>
+                          </a>
+                          <a
+                            href="https://scratch.mit.edu/projects/239062430/"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            target="_blank"
+                            href="https://gentle-sands-24704.herokuapp.com/"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-memory"></i>
+                            </div>
+                            <h5>Clicky Game</h5>
+                            <p>
+                              A Rick & Morty themed memory game built with
+                              Node.js and React.
+                            </p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/clicky-game"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="projects-utility" class="card text-white bg-dark border-gray projects utility">
+                <div class="card-header border-gray text-neon-pink"><h3>The Utilitarian Stuff</h3></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://github.com/ian-c-nelson/dot-net-nlog-logger"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-toolbox"></i>
+                            </div>
+                            <h5>.Net Logger Class</h5>
+                            <p>
+                              A logging utility class using NLog
+                              programmatically.
+                            </p>
+                          </a>
+
+                          <a
+                            href="https://github.com/ian-c-nelson/dot-net-nlog-logger"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://github.com/ian-c-nelson/dot-net-optimization-framework"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-toolbox"></i>
+                            </div>
+                            <h5>.Net Class Library</h5>
+                            <p>
+                              A .Net utility library. Mostly for reference and
+                              snippets.
+                            </p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/dot-net-optimization-framework"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://ian-c-nelson.github.io/giphy-controller/giphy-con.js"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-toolbox"></i>
+                            </div>
+                            <h5>GIPHY Controller</h5>
+                            <p>A JavaScript wrapper class for the GIPHY API.</p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/giphy-controller"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://github.com/ian-c-nelson/reactify"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fab fa-react"></i>
+                            </div>
+                            <h5>React Boiler Plate #1</h5>
+                            <p>
+                              React boiler plate forked from Tucker Bauchamp's
+                              Reactify.
+                            </p>
+                          </a>
+                          <a
+                            href="https://github.com/ian-c-nelson/reactify"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="projects-other" class="card text-white bg-dark border-gray projects other">
+                <div class="card-header border-gray text-neon-pink"><h3>The Other Stuff</h3></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://pure-plateau-22293.herokuapp.com/"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fab fa-node-js"></i>
+                            </div>
+                            <h5>Burger Time</h5>
+                            <p>
+                              Node Express Handlebars Homework (MVC Pattern)
+                            </p>
+                          </a>
+
+                          <a
+                            href="https://github.com/ian-c-nelson/burger"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://github.com/ian-c-nelson/bamazon"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fab fa-node-js"></i>
+                            </div>
+                            <h5>Bamazon</h5>
+                            <p>
+                              D&D shop inventory console application using
+                              Node.js and MySQL.
+                            </p>
+                          </a>
+
+                          <a
+                            href="https://github.com/ian-c-nelson/bamazon"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://github.com/ian-c-nelson/liri-node-app"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fab fa-node-js"></i>
+                            </div>
+                            <h5>Liri</h5>
+                            <p>
+                              Console application using Node.js to make calls to
+                              various APIs for info on songs or movies.
+                            </p>
+                          </a>
+
+                          <a
+                            href="https://github.com/ian-c-nelson/liri-node-app"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+                      <div class="card portfolio-item text-neon-blue h-100">
+                        <div class="portfolio-item-info bg-dark">
+                          <a
+                            href="https://ian-c-nelson.github.io/gif-tastic/"
+                            target="_blank"
+                          >
+                            <div class="icon-wrapper">
+                              <i class="fal fa-images"></i>
+                            </div>
+                            <h5>GifTastic</h5>
+                            <p>
+                              Ajax Homework. Simple app for pulling gifs from
+                              GIPHY using their API.
+                            </p>
+                          </a>
+
+                          <a
+                            href="https://github.com/ian-c-nelson/gif-tastic"
+                            target="_blank"
+                          >
+                            Source
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+      <article>
+        <div class="container">
+
+        </div>
+      </article>
+
     </div>
-    <footer class="footer bg-dark fixed-bottom">
+
+    <footer class="footer bg-dark">
       <div class="container text-center text-md-left">
         <div class="footer-copyright text-center py-3">
           <span>Copyright, Ian Nelson, 2018 ©</span>
         </div>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/ccapture.js"></script>
+    <script id="vertexShader" type="x-shader/x-vertex">
+      void main() {
+          gl_Position = vec4( position, 1.0 );
+      }
+    </script>
+    <script id="fragmentShader" type="x-shader/x-fragment">
+      uniform vec2 u_resolution;
+      uniform vec2 u_mouse;
+      uniform float u_time;
+      uniform sampler2D u_noise;
+      uniform sampler2D u_bg;
+      uniform float u_scroll;
+
+      const vec3 cloudcolour = vec3(0.1,0.1,.24);
+      const vec3 lightcolour = vec3(0.25,0.6,1.);
+
+      float mod289(float x){return x - floor(x * (1.0 / 289.0)) * 289.0;}
+      vec4 mod289(vec4 x){return x - floor(x * (1.0 / 289.0)) * 289.0;}
+      vec4 perm(vec4 x){return mod289(((x * 34.0) + 1.0) * x);}
+
+      float noise(vec3 p){
+          vec3 a = floor(p);
+          vec3 d = p - a;
+          d = d * d * (3.0 - 2.0 * d);
+
+          vec4 b = a.xxyy + vec4(0.0, 1.0, 0.0, 1.0);
+          vec4 k1 = perm(b.xyxy);
+          vec4 k2 = perm(k1.xyxy + b.zzww);
+
+          vec4 c = k2 + a.zzzz;
+          vec4 k3 = perm(c);
+          vec4 k4 = perm(c + 1.0);
+
+          vec4 o1 = fract(k3 * (1.0 / 41.0));
+          vec4 o2 = fract(k4 * (1.0 / 41.0));
+
+          vec4 o3 = o2 * d.z + o1 * (1.0 - d.z);
+          vec2 o4 = o3.yw * d.x + o3.xz * (1.0 - d.x);
+
+          return o4.y * d.y + o4.x * (1.0 - d.y);
+      }
+
+      void main() {
+        vec2 uv = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / min(u_resolution.y, u_resolution.x);
+
+        float noise1 = noise(vec3(uv * 3. * noise(vec3(uv * 3. + 100., u_time * 3. + 10.)), u_time * 2.))  * 2.;
+
+        float noise2 = noise(vec3(uv + 2.35, u_time * 1.357 - 10.));
+
+        uv.y -= u_scroll * .0001;
+
+        uv += texture2D(u_bg, uv * vec2(.5, 1.) - vec2(u_time * .05, 1.) - .5 * .05).rg * 0.08 + noise1 * .008 * (1. - clamp(noise1 * noise1 * 2. + .2, 0., 1.));
+
+        vec3 tex = texture2D(u_bg, uv * vec2(.5, 1.) - vec2(u_time * .02, 1.) - .5).rgb;
+
+        uv.y -= u_scroll * .0001;
+        vec3 tex1 = texture2D(u_bg, uv * vec2(.5, 1.) - vec2(u_time * .08, 1.)).rgb;
+
+        uv.y -= u_scroll * .0001;
+        vec3 tex2 = texture2D(u_bg, (uv * .8 + .5) * vec2(.5, 1.) - vec2(u_time * .1, 1.)).rgb;
+
+        vec3 fragcolour = tex;
+
+        float shade = tex.r;
+        shade *= clamp(noise1 * noise2 * sin(u_time * 3.), .2, 10.);
+        shade += shade * shade * 3.;
+        shade -= (1. - clamp(tex1 * 4., 0., 1.).r) * .2;
+        shade -= (1. - clamp(tex2 * 4., 0., 1.).r) * .1;
+
+        fragcolour = mix(cloudcolour, lightcolour, shade);
+
+        gl_FragColor = vec4(fragcolour, 1.);
+      }
+    </script>
+    <script src="assets/js/storm.js"></script>
   </body>
 </html>
